@@ -29,6 +29,7 @@ a{
     float :right;
 } 
 header{ 
+	position:fixed;
    color:black;
    background-color:#000;
    border-color: #080808; 
@@ -262,7 +263,6 @@ body{
 @media screen and (max-width:680px)
 {
     header{
-        position:absolute;
         background: #470806;
     }
     #menu-icon{
