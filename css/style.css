@@ -139,10 +139,12 @@ li{
     text-align: center; 
 }
  h2{
-     text-align:center;
+        text-align:center;
+        color:rgb(0, 2, 20);
+         font-family: 'Luckiest Guy', cursive;
+         font-size:40px;
  }
  input[type="submit"]{
-     display:block;
      margin: 0;
      color:white;
      background: #125688;
@@ -162,6 +164,24 @@ li{
 .img1,.img2,.img3{
   flex:1;
   text-align:center;
+}
+.cat{
+    display:flex;
+    background-color: #dcd8f1;
+    width:100%;
+    justify-content:center;
+}
+.category{
+    height:300px;
+    max-width:100%;
+}
+.cat1,.cat2,.cat3{
+    flex:1;
+    text-align:center;
+}
+h3{
+    font-family: 'Oleo Script', cursive;
+    color:rgb(224, 9, 153)
 }
 footer{
       background-color: #000;
@@ -306,6 +326,9 @@ body{
         width:100%;
     }
     .topbrand{
+        flex-direction:column;
+    }
+    .cat{
         flex-direction:column;
     }
     .fa {
