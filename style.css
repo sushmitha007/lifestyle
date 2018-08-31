@@ -24,10 +24,13 @@ nav a:hover{
     color: #ac2925;
 }
 nav{
-    float:right;
+    float:none;
+}
+#logo{
+    padding-right:30vw;
 }
 .para{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
     line-height:2em;
     background-color:white;
     box-decoration-break: clone;
@@ -39,15 +42,12 @@ a{
     max-width:100%;
 }
 .logo{
-    float:left;
-     height: 50px;
-     font-size: 30px; 
+     font-size: 20px; 
      font-weight: bold; 
      font-family: 'Carter One', cursive;
      color: rgba(243, 9, 9, 0.836);
-} 
+}
 .header-link{
-     font-size:14px;
      height: 50px;
      font-size:16px; 
      font-weight: bold;
@@ -203,7 +203,6 @@ footer a{
     padding:20px;
     margin:0;
     font-size: 30px;
-    width:9%;
     text-align: center;
     text-decoration: none;
   }
@@ -214,7 +213,6 @@ footer a{
   .fa-facebook {
     background: #3B5998;
     color: #ffffff;
-    margin-right:10px;
   }
   
   .fa-twitter {
@@ -260,7 +258,7 @@ footer a{
 body{
     position:relative;
 }
-@media screen and (max-width:950px)
+@media screen and (max-width:1044px)
 {
     .banner-image{
         background-size:100%;
@@ -275,13 +273,33 @@ body{
          position:relative;
      }
 }
-
-@media screen and (max-width:680px)
+@media screen and (max-width:860px)
 {
-    header{
-        background: #470806;
+#logo{
+    padding-right:7vw;
+    font-size:20px;
+}
+.logo{
+    padding-right:7vw;
+}
+.header-link{
+    font-size:13px;
+}
+    
+media screen and (max-width:680px)
+{
+    #logo{
+        padding-right:12vw;
+        font-size:20px;
     }
-    #menu-icon{
+    .logo{
+        padding-right:12vw;
+    }
+    header{
+        background-color:rgba(250, 241, 241, 0.432);
+        padding:0;
+    }
+   /* #menu-icon{
             background: url("img/menu.png");
             background-size:25px;
             width:20%;
@@ -305,11 +323,29 @@ body{
         padding:15px 0;
         margin:0;
         height:100%;
+    }*/
+    nav{
+        float:none;
+        width:100%;
+        background-color: #857373;
     }
-   .header-link{
-
-       padding:0 1em;
-       text-align:center;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width:100%;
+        float:none;
+    }
+    
+    li a {
+        display: inline;
+        color: #000;
+        text-decoration: none;
+    }
+    .header-link{
+       padding-right:6px;
+       font-size:12px; 
+       height: 20px;
     }
     .banner-image{
         background-size:100%;
@@ -344,14 +380,23 @@ body{
          position: relative;
      }
 }
-@media screen and (max-width:500px)
-{   
-    #menu-icon{
+@media screen and (max-width:560px)
+{
+.logo{
+    padding-right:4vw;
+    font-size:18px;
+}
+.header-link{
+    padding-right:3px;
+    font-size:10px; 
+    height: 15px;
+}
+
+   /* #menu-icon{
     float:right;
     background-size:25px;
     height:25px;
-    width:25px; 
-}
+    width:25px;*/
 body,html{
     max-width:100%;
      margin:0;
@@ -361,15 +406,22 @@ body,html{
      position:relative;
  }
 }
-@media screen and (max-width:320px)
+@media screen and (max-width:400px)
 {
-    #menu-icon{
-        background-size:25px;
-        float:right;
-        height:25px;
-        width:25px; 
+    #logo{
+        padding-right:3vw;
+    }
+    .logo{
+        padding-right:2vw;
+        font-size:13px;
+    }
+    .header-link{
+        padding-right:3px;
+        font-size:10px; 
+        height: 15px;
     }
     .fa {
+    
         padding:10%;
         margin:0;
         font-size: 30px;
