@@ -285,8 +285,8 @@ body{
 .header-link{
     font-size:13px;
 }
-    
-media screen and (max-width:680px)
+}   
+@media screen and (max-width:680px)
 {
     #logo{
         padding-right:12vw;
@@ -385,7 +385,7 @@ media screen and (max-width:680px)
 .logo{
     padding-right:4vw;
     font-size:18px;
-}
+    }
 .header-link{
     padding-right:3px;
     font-size:10px; 
